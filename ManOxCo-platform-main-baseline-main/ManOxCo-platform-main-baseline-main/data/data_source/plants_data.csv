@@ -1,0 +1,6 @@
+plant	max daily production (tons)	Max LOX Storage Capacity (tons)	Plant Average Production Efficiency	Plant Average Storage Efficiency	Cost Energy € per ton	other cost per ton €	fixed monthly cost
+Madrid	4	60	74,50%	99%	125	25	45000
+Barcelona	4,1	60	73,35%	98%	115	25	43000
+Zaragoza	3,5	50	86,50%	97%	105	25	35000
+Alicante	3,4	45	88,00%	99%	100	25	30000
+Gijon	3,2	45	92,00%	98%	120	25	30000
