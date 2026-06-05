@@ -1,0 +1,26 @@
+Hospital City	Hostipal Name	Storage Max Capacity (Tons)	Min to Refill	price per ton €
+Madrid	Doce de Octubre	10	12%	2500,00
+Madrid	Gregorio Marañón	12	12%	2625,00
+Madrid	Infanta Sofía	8	12%	2650,00
+Madrid	San Carlos	10	12%	2425,00
+Madrid	La Paz	10	12%	2350,00
+Barcelona	Bellvitge	12	12%	2300,00
+Barcelona	Clínic	8	12%	2650,00
+Barcelona	Del Mar	10	12%	2750,00
+Barcelona	Vall d'Hebron	10	12%	2500,00
+Barcelona	Sant Joan de Déu	12	12%	2750,00
+Zaragoza	Quirón	8	12%	2250,00
+Zaragoza	Nuestra Señora	8	12%	2475,00
+Zaragoza	Royo Villanova	10	12%	2575,00
+Zaragoza	Miguel Servet	10	12%	2375,00
+Zaragoza	Ernest Lluch	10	12%	2400,00
+Alicante	General de Alicante	12	12%	2650,00
+Alicante	San Juan	8	12%	2475,00
+Alicante	Perpetuo Socorro	10	12%	2650,00
+Alicante	Vinalopó	10	12%	2350,00
+Alicante	IMED	12	12%	2250,00
+Gijon	Covadonga	8	12%	2250,00
+Gijon	Gijón Salud	10	12%	2600,00
+Gijon	Cabueñes	10	12%	2275,00
+Gijon	Jovellanos	12	12%	2275,00
+Gijon	Begona	8	12%	2500,00
