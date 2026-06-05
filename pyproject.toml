@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=65.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexus-pi1-manoxco"
+version = "0.1.0"
+description = "ManOxCo Oxygen Reliability Transformation - PI-1 Data Platform"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Nexus Consulting", email = "consulting@nexus.io"},
+]
+requires-python = ">=3.10"
+keywords = ["data-platform", "big-data", "spark", "medallion-architecture", "iot", "predictive-analytics"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+dependencies = [
+    "pyspark>=3.5.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.3.0",
+    "sqlalchemy>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "loguru>=0.7.0",
+    "requests>=2.31.0",
+    "openai>=1.0.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "pydantic>=2.0.0",
+    "pyarrow>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.9.0",
+    "flake8>=6.1.0",
+    "mypy>=1.5.0",
+    "isort>=5.12.0",
+    "jupyter>=1.0.0",
+    "notebook>=7.0.0",
+    "ipython>=8.15.0",
+]
+docker = [
+    "docker>=6.1.0",
+]
+ai = [
+    "langchain>=0.1.0",
+    "faiss-cpu>=1.7.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sarathdotgithub/nexus-big-data"
+"Documentation" = "https://github.com/sarathdotgithub/nexus-big-data/wiki"
+"Repository" = "https://github.com/sarathdotgithub/nexus-big-data"
+"Issues" = "https://github.com/sarathdotgithub/nexus-big-data/issues"
+
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311', 'py312']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --cov=src --cov-report=html"
