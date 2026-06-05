@@ -1,3 +1,55 @@
+Metadata-Version: 2.4
+Name: nexus-pi1-manoxco
+Version: 0.1.0
+Summary: ManOxCo Oxygen Reliability Transformation - PI-1 Data Platform
+Author-email: Nexus Consulting <consulting@nexus.io>
+License: MIT
+Project-URL: Homepage, https://github.com/sarathdotgithub/nexus-big-data
+Project-URL: Documentation, https://github.com/sarathdotgithub/nexus-big-data/wiki
+Project-URL: Repository, https://github.com/sarathdotgithub/nexus-big-data
+Project-URL: Issues, https://github.com/sarathdotgithub/nexus-big-data/issues
+Keywords: data-platform,big-data,spark,medallion-architecture,iot,predictive-analytics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark>=3.5.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: scikit-learn>=1.3.0
+Requires-Dist: sqlalchemy>=2.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: loguru>=0.7.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: fastapi>=0.104.0
+Requires-Dist: uvicorn>=0.24.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pyarrow>=13.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Requires-Dist: black>=23.9.0; extra == "dev"
+Requires-Dist: flake8>=6.1.0; extra == "dev"
+Requires-Dist: mypy>=1.5.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: jupyter>=1.0.0; extra == "dev"
+Requires-Dist: notebook>=7.0.0; extra == "dev"
+Requires-Dist: ipython>=8.15.0; extra == "dev"
+Provides-Extra: docker
+Requires-Dist: docker>=6.1.0; extra == "docker"
+Provides-Extra: ai
+Requires-Dist: langchain>=0.1.0; extra == "ai"
+Requires-Dist: faiss-cpu>=1.7.0; extra == "ai"
+
 # Nexus PI-1: ManOxCo Oxygen Reliability Transformation
 
 ## About Nexus
@@ -144,11 +196,11 @@ nexus-big-data/
 - [x] Configuration management
 - [x] Logging framework
 
-### Phase 2: Data Integration ✅
-- [x] Batch pipelines (sales, expenses)
-- [x] Streaming pipelines (production, consumption)
-- [x] 6 ManOxCo data source connectors
-- [x] Data validation & profiling
+### Phase 2: Data Integration (In Progress)
+- [ ] Batch pipelines (sales, expenses)
+- [ ] Streaming pipelines (production, consumption)
+- [ ] 6 ManOxCo data source connectors
+- [ ] Data validation & profiling
 
 ### Phase 3: Medallion Architecture
 - [ ] Bronze layer (raw ingestion)
